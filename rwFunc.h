@@ -4,10 +4,14 @@
 #include <vector>
 #include <string>
 
-std::vector<std::string> readTextFromFile(std::string filePath);
+#include "student.h"
 
-void writeTextInFile(std::vector<std::string>);
+std::vector<std::string> readTextFromFile(std::string filePath, char splitChar);
+
+void writeTextInFile(std::string text, std::string filePath);
 
 std::vector<std::string> split(std::string text);
+
+std::vector<Student> getVectorOfStudentFromText(std::vector<std::string> text);
 
 #endif // RWFUNC_H

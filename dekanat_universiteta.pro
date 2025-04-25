@@ -10,4 +10,8 @@ SOURCES += \
 
 HEADERS += \
     menu.h \
-    rwFunc.h
+    rwFunc.h \
+    student.h
+
+DISTFILES += \
+    doffice.db
