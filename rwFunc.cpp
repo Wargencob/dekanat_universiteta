@@ -66,7 +66,7 @@ std::vector<std::string> readTextFromFile(std::string filePath, char splitChar)
     }
     else
     {
-        std::cout << "This file is not exist" << std::endl;
+        std::cout << "Такого файла не существует" << std::endl;
     }
 }
 
@@ -81,7 +81,7 @@ void writeTextInFile(std::string text, std::string filePath)
     }
     else
     {
-        std::cout << "This file is not exist" << std::endl;
+        std::cout << "Такого файла не существует" << std::endl;
     }
 }
 

@@ -872,10 +872,13 @@ compiler_clean:
 ####### Compile
 
 main.o: ../../main.cpp ../../rwFunc.h \
-		../../student.h
+		../../student.h \
+		../../menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
-menu.o: ../../menu.cpp ../../menu.h
+menu.o: ../../menu.cpp ../../menu.h \
+		../../rwFunc.h \
+		../../student.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o menu.o ../../menu.cpp
 
 rwFunc.o: ../../rwFunc.cpp ../../rwFunc.h \

@@ -7,13 +7,13 @@
 
 void menu()
 {
-    std::string filePath = "your file path";
+    std::string filePath = "/home/wargen/dekanat_universiteta/doffice.db";
 
-    std::cout << "Hello, this application can work with dekanat db" << std::endl;
-    std::cout << "1. Read and write db source into the console" << std::endl;
-    std::cout << "2. Add new Student to the db" << std::endl;
-    std::cout << "3. Exit from app" << std::endl;
-    std::cout << "Write a number of menu position:" << std::endl;
+    std::cout << "Привет, это приложение для работы с БД деканата" << std::endl;
+    std::cout << "1. Чтение из данных в БД" << std::endl;
+    std::cout << "2. Добавить нового студента в БД" << std::endl;
+    std::cout << "3. Выйти из приложения" << std::endl;
+    std::cout << "Введите номер пункта меню:" << std::endl;
 
     int number;
 
@@ -40,7 +40,7 @@ void menu()
                     result[i].avg << std::endl;
             }
 
-            std::cout << "Write a number of menu position:" << std::endl;
+            std::cout << "Введите номер пункта меню:" << std::endl;
 
             break;
         }
@@ -53,22 +53,22 @@ void menu()
             std::string surname;
             std::string phoneNumber;
             std::string avg;
-            std::cout << "Enter id:" << std::endl;
+            std::cout << "Введите айди пользователя:" << std::endl;
             std::cin >> id;
-            std::cout << "Enter Record book number:" << std::endl;
+            std::cout << "Введите номер зачётной книжки:" << std::endl;
             std::cin >> recordBookNumber;
-            std::cout << "Enter name:" << std::endl;
+            std::cout << "Введите имя студента:" << std::endl;
             std::cin >> name;
-            std::cout << "Enter surname:" << std::endl;
+            std::cout << "Введите фамилию:" << std::endl;
             std::cin >> surname;
-            std::cout << "Enter phone number:" << std::endl;
+            std::cout << "Введите номер телефона:" << std::endl;
             std::cin >> phoneNumber;
-            std::cout << "Enter avg (format with '.'):" << std::endl;
+            std::cout << "Введите средний балл (в формате 'число.число'):" << std::endl;
             std::cin >> avg;
             text = id + ";" + recordBookNumber + ";" + name + " " + surname + ";" + phoneNumber + ";" + avg;
             writeTextInFile(text, filePath);
 
-            std::cout << "Write a number of menu position:" << std::endl;
+            std::cout << "Введите номер пункта меню:" << std::endl;
 
             break;
         }
@@ -79,7 +79,7 @@ void menu()
         }
         default:
         {
-            std::cout << "Wrong number, try again" << std::endl;
+            std::cout << "Такого номера не существует, попробуйте ещё раз" << std::endl;
             break;
         }
 
